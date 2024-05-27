@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hordarsalan/ontologies/2024/4/VictorianHeritage"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hordarsalan/ontologies/2024/4/VictorianHeritage">
+    <Prefix name="" IRI="http://www.semanticweb.org/hordarsalan/ontologies/2024/4/VictorianHeritage/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AgriculturalBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchitecturalElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BayWindows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CasementWindows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommercialBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConversionToOfficeSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrumblingFacade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecorativeCornices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deterioration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FurtherRestorationWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndustrialBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IronCorrosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IronRailings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalLotteryHeritageFundGrant2018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pinnacles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecentRepairsAndRefurbishment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red_Brick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidentialApartments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restoration1995"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restoration1996"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restoration1997"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restoration2007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sandstone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slate_Roof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StainedGlassWindows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimberFraming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrgentWorksNotice2016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vacant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Very_Bad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VictorianHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WallPaintings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterDamage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WoodyVegetation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#designedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArchitecturalElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentUse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFuturePlans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsSignsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#underwentRestoration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArchitecturalStyle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConstructionMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasElementMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfStoreys"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRestorationDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSignsOfDeterioration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BayWindows_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CasementWindows_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConversionToOfficeSpace_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrumblingFacade_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DecorativeCornices_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fair_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FurtherRestorationWork_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Good_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IronCorrosion_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IronRailings_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iron_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museum_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NationalLotteryHeritageFundGrant2018_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pinnacles_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pub_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecentRepairsAndRefurbishment_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RedBrick_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResidentialApartments_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restoration1995_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restoration1996_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restoration1997_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restoration2007_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sandstone_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SirGeorgeGilbertScott_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlateRoof_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spire_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StainedGlassWindows_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimberFraming_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timber_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tower_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UrgentWorksNotice2016_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vacant_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VeryBad_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WallPaintings_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WaterDamage_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WoodyVegetation_1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AgriculturalBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BayWindows"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CasementWindows"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionToOfficeSpace"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrumblingFacade"/>
+        <Class IRI="#Deterioration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecorativeCornices"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fair"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FurtherRestorationWork"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Good"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndustrialBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iron"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IronCorrosion"/>
+        <Class IRI="#Deterioration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IronRailings"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalLotteryHeritageFundGrant2018"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pinnacles"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poor"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pub"/>
+        <Class IRI="#Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecentRepairsAndRefurbishment"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red_Brick"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidentialApartments"/>
+        <Class IRI="#Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restoration1995"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restoration1996"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restoration1997"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restoration2007"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sandstone"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slate_Roof"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spire"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StainedGlassWindows"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timber"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimberFraming"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tower"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrgentWorksNotice2016"/>
+        <Class IRI="#Restoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vacant"/>
+        <Class IRI="#Use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Very_Bad"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VictorianHouse"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WallPaintings"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterDamage"/>
+        <Class IRI="#Deterioration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WoodyVegetation"/>
+        <Class IRI="#Deterioration"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ConversionToOfficeSpace"/>
+        <NamedIndividual IRI="#ConversionToOfficeSpace_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fair"/>
+        <NamedIndividual IRI="#Fair_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FurtherRestorationWork"/>
+        <NamedIndividual IRI="#FurtherRestorationWork_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Good"/>
+        <NamedIndividual IRI="#Good_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IronCorrosion"/>
+        <NamedIndividual IRI="#IronCorrosion_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IronRailings"/>
+        <NamedIndividual IRI="#IronRailings_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Iron"/>
+        <NamedIndividual IRI="#Iron_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NationalLotteryHeritageFundGrant2018"/>
+        <NamedIndividual IRI="#NationalLotteryHeritageFundGrant2018_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pinnacles"/>
+        <NamedIndividual IRI="#Pinnacles_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poor"/>
+        <NamedIndividual IRI="#Poor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VictorianHouse"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Use"/>
+        <NamedIndividual IRI="#Pub_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecentRepairsAndRefurbishment"/>
+        <NamedIndividual IRI="#RecentRepairsAndRefurbishment_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Red_Brick"/>
+        <NamedIndividual IRI="#RedBrick_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration"/>
+        <NamedIndividual IRI="#Restoration1995_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration1995"/>
+        <NamedIndividual IRI="#Restoration1995_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration"/>
+        <NamedIndividual IRI="#Restoration1996_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration1996"/>
+        <NamedIndividual IRI="#Restoration1996_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration"/>
+        <NamedIndividual IRI="#Restoration1997_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration1997"/>
+        <NamedIndividual IRI="#Restoration1997_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration"/>
+        <NamedIndividual IRI="#Restoration2007_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restoration2007"/>
+        <NamedIndividual IRI="#Restoration2007_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sandstone"/>
+        <NamedIndividual IRI="#Sandstone_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Architect"/>
+        <NamedIndividual IRI="#SirGeorgeGilbertScott_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Slate_Roof"/>
+        <NamedIndividual IRI="#SlateRoof_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spire"/>
+        <NamedIndividual IRI="#Spire_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StainedGlassWindows"/>
+        <NamedIndividual IRI="#StainedGlassWindows_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimberFraming"/>
+        <NamedIndividual IRI="#TimberFraming_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Timber"/>
+        <NamedIndividual IRI="#Timber_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tower"/>
+        <NamedIndividual IRI="#Tower_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UrgentWorksNotice2016"/>
+        <NamedIndividual IRI="#UrgentWorksNotice2016_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Very_Bad"/>
+        <NamedIndividual IRI="#VeryBad_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WallPaintings"/>
+        <NamedIndividual IRI="#WallPaintings_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterDamage"/>
+        <NamedIndividual IRI="#WaterDamage_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WoodyVegetation"/>
+        <NamedIndividual IRI="#WoodyVegetation_1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArchitecturalElement"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#BayWindows_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArchitecturalElement"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#DecorativeCornices_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#RecentRepairsAndRefurbishment_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#Restoration1995_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#Restoration1996_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#Restoration1997_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <NamedIndividual IRI="#Restoration2007_1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasArchitecturalStyle"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal>Victorian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasConstructionMaterial"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal>Red Brick</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfStoreys"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRestorationDetails"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal>Internal alterations in 1995, 1996 &amp; 1997; further work in 2007; recent repairs and refurbishment</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSignsOfDeterioration"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal>Commercial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#PrinceAlbert_Wolverhampton"/>
+        <Literal>Wolverhampton</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#designedBy"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArchitecturalElement"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentUse"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFuturePlans"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#showsSignsOf"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <Class IRI="#Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#designedBy"/>
+        <Class IRI="#Architect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArchitecturalElement"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentUse"/>
+        <Class IRI="#Use"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFuturePlans"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#showsSignsOf"/>
+        <Class IRI="#Deterioration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#underwentRestoration"/>
+        <Class IRI="#Restoration"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasArchitecturalStyle"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConstructionMaterial"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasElementMaterial"/>
+        <Class IRI="#ArchitecturalElement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfStoreys"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRestorationDetails"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSignsOfDeterioration"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasType"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locatedIn"/>
+        <Class IRI="#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasArchitecturalStyle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConstructionMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasElementMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfStoreys"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRestorationDetails"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSignsOfDeterioration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locatedIn"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
