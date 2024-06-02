@@ -1,0 +1,942 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT/"
+     xml:base="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT/"
+     xmlns:AHT="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasArchitecturalElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasArchitecturalElement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#showsSignsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#showsSignsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#underwentRestoration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#underwentRestoration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#designedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#designedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>designedBy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasBuildingType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasBuildingType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasConstructionMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasConstructionMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasConstructionYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasConstructionYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasCurrentUse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasCurrentUse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasElementMaterialColour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasElementMaterialColour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasElementMaterialType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasElementMaterialType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasFuturePlan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasFuturePlan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasMaterialColour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasMaterialColour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasNumberOfStoreys -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasNumberOfStoreys">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasRestorationDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasRestorationDetails">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasSignsOfDeterioration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasSignsOfDeterioration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasStyle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#hasStyle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#locatedIn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#restorationArchitect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#restorationArchitect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#restorationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#restorationYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#AgeOfBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#AgeOfBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes"/>
+        <rdfs:comment>Records the year the building was constructed.</rdfs:comment>
+        <rdfs:label>Age of the Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Architect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Architect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#HistoricalInformation"/>
+        <rdfs:comment>Name of the architect.</rdfs:comment>
+        <rdfs:label>Architect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ConstructionMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ConstructionMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes"/>
+        <rdfs:comment>Type of materials used in the building.</rdfs:comment>
+        <rdfs:label>Construction Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ContextEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ContextEnvironment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentAndFutureUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentAndFutureUse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentUseOccupancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentUseOccupancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentAndFutureUse"/>
+        <rdfs:comment>Details about the current use of the building.</rdfs:comment>
+        <rdfs:label>Current Use/Occupancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ElementMaterialColor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ElementMaterialColor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements"/>
+        <rdfs:comment>Color of materials used in the architectural elements.</rdfs:comment>
+        <rdfs:label>Element Material Color</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#FuturePlan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#FuturePlan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentAndFutureUse"/>
+        <rdfs:comment>Description of any future plans for the building.</rdfs:comment>
+        <rdfs:label>Future Plans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#HistoricalInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#HistoricalInformation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#LocationEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#LocationEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ContextEnvironment"/>
+        <rdfs:comment>Description of the building&apos;s location and surrounding environment.</rdfs:comment>
+        <rdfs:label>Location/Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialColour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialColour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes"/>
+        <rdfs:comment>Color of materials used in the building.</rdfs:comment>
+        <rdfs:label>Material Colour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements"/>
+        <rdfs:comment>Materials used for the architectural elements.</rdfs:comment>
+        <rdfs:label>Material of Elements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#HistoricalInformation"/>
+        <rdfs:comment>Details about any restoration work, including the date and description.</rdfs:comment>
+        <rdfs:label>Restoration Details</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#HistoricalInformation"/>
+        <rdfs:comment>Types of any deterioration observed in the building.</rdfs:comment>
+        <rdfs:label>Signs of Deterioration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#ArchitecturalElements"/>
+        <rdfs:comment>Unique features and details of the building’s architecture.</rdfs:comment>
+        <rdfs:label>Specific Architectural Elements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Storeys -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Storeys">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes"/>
+        <rdfs:comment>Number of floors in the building</rdfs:comment>
+        <rdfs:label>Storeys</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#StyleOfBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#StyleOfBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes"/>
+        <rdfs:comment>Describes the architectural style of the building (e.g., Victorian, Gothic)</rdfs:comment>
+        <rdfs:label>Style of the Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#TypeOfBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#TypeOfBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#BuildingAttributes"/>
+        <rdfs:comment>Describes the type of building (e.g., residential, commercial, industrial)</rdfs:comment>
+        <rdfs:label>Type of Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Alberbury_Breccia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Alberbury_Breccia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Alberbury_Breccia</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Alberbury_Breccia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Alberbury Breccia</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Balconies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Balconies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Balconies</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Balconies"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Elevated platforms projecting from the wall of a building, often with decorative railings.</rdfs:comment>
+        <rdfs:label>Balconies</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Bay_Window -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Bay_Window">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Bay_Window</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Bay_Window"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>A window that projects outward from the main walls, creating a bay in the room.</rdfs:comment>
+        <rdfs:label>Bay Window</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Brickwork_Details -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Brickwork_Details">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Brickwork_Details</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Brickwork_Details"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Intricate brick patterns and designs used in Victorian architecture.</rdfs:comment>
+        <rdfs:label>Brickwork Details</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Canted_Chancel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Canted_Chancel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Canted_Chancel</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Canted_Chancel"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>An angled or canted chancel area, often seen in Gothic Revival churches.</rdfs:comment>
+        <rdfs:label>Canted Chancel</rdfs:label>
+        <rdfs:seeAlso>source: HAR Register 2023, Church of St Mary, Warwick.</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Carved_Reredos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Carved_Reredos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Carved_Reredos</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Carved_Reredos"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>A richly carved screen or backdrop behind the altar in a church.</rdfs:comment>
+        <rdfs:label>Carved Reredos</rdfs:label>
+        <rdfs:seeAlso></rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Cast_Iron_Railings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Cast_Iron_Railings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Cast_Iron_Railings</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Cast_Iron_Railings"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Decorative railings made from cast iron, commonly used in Victorian architecture.</rdfs:comment>
+        <rdfs:label>Cast Iron Railings</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CeilingPaintings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CeilingPaintings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>CeilingPaintings</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CeilingPaintings"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Decorative paintings on the ceiling, often depicting religious scenes or motifs.</rdfs:comment>
+        <rdfs:label>Ceiling Paintings</rdfs:label>
+        <rdfs:seeAlso>Source: HAR Register 2023, Church of St Michael, Cambridge.</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Chancel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Chancel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <AHT:hasType rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Chancel"/>
+        <AHT:isPartOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Church_of_St_Michael_Alberbury_with_Cardeston"/>
+        <AHT:hasConstructionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1749</AHT:hasConstructionYear>
+        <AHT:hasElementMaterialType>Alberbury Breccia</AHT:hasElementMaterialType>
+        <AHT:hasMaterialColour>not specified</AHT:hasMaterialColour>
+        <rdfs:label>Chancel</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Chancel"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Chancel</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Church_of_St_Michael_Alberbury_with_Cardeston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Church_of_St_Michael_Alberbury_with_Cardeston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Building"/>
+        <AHT:hasArchitecturalElement rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Chancel"/>
+        <AHT:hasArchitecturalElement rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Nave"/>
+        <AHT:hasArchitecturalElement rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#West_Tower"/>
+        <AHT:showsSignsOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Parapet_Gutter_Issue"/>
+        <AHT:showsSignsOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Tower_Roof_Failure"/>
+        <AHT:showsSignsOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Weathervane_Issue"/>
+        <AHT:underwentRestoration rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Restoration_1905"/>
+        <AHT:designedBy>AE Lloyd Oswell</AHT:designedBy>
+        <AHT:hasBuildingType>Church</AHT:hasBuildingType>
+        <AHT:hasConstructionMaterial>Alberbury Breccia, Sandstone Ashlar</AHT:hasConstructionMaterial>
+        <AHT:hasConstructionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1749</AHT:hasConstructionYear>
+        <AHT:hasCurrentUse>Church services and community events</AHT:hasCurrentUse>
+        <AHT:hasFuturePlan>Restoration and fundraising in progress</AHT:hasFuturePlan>
+        <AHT:hasMaterialColour>Not specified</AHT:hasMaterialColour>
+        <AHT:hasNumberOfStoreys rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AHT:hasNumberOfStoreys>
+        <AHT:hasStyle>Georgian</AHT:hasStyle>
+        <AHT:locatedIn>Alberbury with Cardeston - Shropshire (UA)</AHT:locatedIn>
+        <rdfs:label>Church_of_St_Michael_Alberbury_with_Cardeston</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Decorative_Cornices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Decorative_Cornices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Decorative_Cornices</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Decorative_Cornices"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Ornamental molding around the ceiling edge, typical in Victorian buildings.</rdfs:comment>
+        <rdfs:label>Decorative Cornices</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Fibrous_Plaster_Ceiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Fibrous_Plaster_Ceiling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Fibrous_Plaster_Ceiling</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Fibrous_Plaster_Ceiling"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Decorative ceiling made from fibrous plaster, often featuring intricate designs.</rdfs:comment>
+        <rdfs:label>Fibrous Plaster Ceiling</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Frontage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Frontage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Frontage</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Frontage"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Frontage</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Gable_Roofs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Gable_Roofs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Gable_Roofs</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Gable_Roofs"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>A roof with two sloping sides that form a gable at each end.</rdfs:comment>
+        <rdfs:label>Gable Roofs</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Internal_alterations_in_1995 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Internal_alterations_in_1995">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail"/>
+        <rdfs:label>Internal_alterations_in_1995</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Lancet_Windows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Lancet_Windows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Lancet_Windows</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Lancet_Windows"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Tall, narrow windows with pointed arches, typical of Gothic architecture.</rdfs:comment>
+        <rdfs:label>Lancet Windows</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Nave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Nave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <AHT:hasType rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Nave"/>
+        <AHT:isPartOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Church_of_St_Michael_Alberbury_with_Cardeston"/>
+        <AHT:hasConstructionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1749</AHT:hasConstructionYear>
+        <AHT:hasElementMaterialType>Alberbury Breccia</AHT:hasElementMaterialType>
+        <AHT:hasMaterialColour>not specified</AHT:hasMaterialColour>
+        <rdfs:label>Nave</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Nave"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Nave</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Parapet_Gutter_Issue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Parapet_Gutter_Issue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration"/>
+        <AHT:description>The parapet gutter requires complete renewal.</AHT:description>
+        <rdfs:label>Parapet_Gutter_Issue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Plain_Clay_Tiles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Plain_Clay_Tiles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Plain_Clay_Tiles</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Plain_Clay_Tiles"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Plain Clay Tiles</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Pub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Pub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#CurrentUseOccupancy"/>
+        <rdfs:label>Pub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Red_Terracotta_Facade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Red_Terracotta_Facade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Red_Terracotta_Facade</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Red_Terracotta_Facade"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>A building facade made from red terracotta tiles or bricks, common in Victorian public buildings.</rdfs:comment>
+        <rdfs:label>Red Terracotta Facade</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Restoration_1905 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Restoration_1905">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#RestorationDetail"/>
+        <AHT:restorationArchitect>AE Lloyd Oswell</AHT:restorationArchitect>
+        <AHT:restorationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1905</AHT:restorationYear>
+        <rdfs:label>Restoration_1905</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Sandstone_Ashlar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Sandstone_Ashlar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Sandstone_Ashlar</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Sandstone_Ashlar"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Sandstone Ashlar</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Slate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Slate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Slate</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Slate"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#MaterialOfElement"/>
+        <rdfs:label>Slate</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Soaring_Tower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Soaring_Tower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Soaring_Tower</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Soaring_Tower"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>A tall, vertical structure often part of Gothic Revival churches, providing a focal point and often housing bells or other features.</rdfs:comment>
+        <rdfs:label>Soaring Tower</rdfs:label>
+        <rdfs:seeAlso>Source: HAR Register 2023, Church of St James, New Brighton.</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Stained_Glass_Windows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Stained_Glass_Windows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Stained_Glass_Windows</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Stained_Glass_Windows"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Windows made from colored glass pieces, often depicting scenes or patterns.</rdfs:comment>
+        <rdfs:label>Stained Glass Windows</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Tower_Roof_Failure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Tower_Roof_Failure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration"/>
+        <AHT:description>The slate covering to the tower roof has failed and needs to be re-laid.</AHT:description>
+        <rdfs:label>Tower_Roof_Failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Tracery_in_Window -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Tracery_in_Window">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Tracery_in_Window</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Tracery_in_Window"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Ornamental stonework holding stained glass in place, characteristic of Gothic windows.</rdfs:comment>
+        <rdfs:label>Tracery in Window</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Turrets_and_Towers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Turrets_and_Towers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>Turrets_and_Towers</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Turrets_and_Towers"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:comment>Small towers that project from the wall of a building, common in Victorian Gothic architecture.</rdfs:comment>
+        <rdfs:label>Turrets and Towers</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Weathervane_Issue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Weathervane_Issue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SignsOfDeterioration"/>
+        <AHT:description>The decorative weathervane needs overhauling and access to the tower parapet gutter improved.</AHT:description>
+        <rdfs:label>Weathervane_Issue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#West_Tower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#West_Tower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <AHT:hasType rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#West_Tower"/>
+        <AHT:isPartOf rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Church_of_St_Michael_Alberbury_with_Cardeston"/>
+        <AHT:hasConstructionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1844</AHT:hasConstructionYear>
+        <AHT:hasElementMaterialType>Not specified</AHT:hasElementMaterialType>
+        <AHT:hasElementMaterialType>Sandstone Ashlar</AHT:hasElementMaterialType>
+        <rdfs:label>West_Tower</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#West_Tower"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#SpecificArchitecturalElement"/>
+        <rdfs:label>West Tower</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Wolverhampton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Wolverhampton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#LocationEnvironment"/>
+        <rdfs:label>Wolverhampton</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#Wolverhampton"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hordarsalan/ontologies/2024/5/AHT#LocationEnvironment"/>
+        <rdfs:label>Wolverhampton</rdfs:label>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
