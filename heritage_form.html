@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heritage Questions Form</title>
+</head>
+<body>
+    <h1>Heritage Questions Form</h1>
+    <form method="POST" action="/submit">
+
+        <h2>General Information about a Building (HQ1)</h2>
+        <label>How many storeys does the building have? (HQ1.1)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ1_1[]"><br>
+        {% endfor %}
+
+        <label>What is the type of the building (e.g., residential, commercial)? (HQ1.2)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ1_2[]"><br>
+        {% endfor %}
+
+        <label>What is the architectural style or age of the building? (HQ1.3)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ1_3[]"><br>
+        {% endfor %}
+
+        <label>What materials and colours are used in the building's construction? (HQ1.4)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ1_4[]"><br>
+        {% endfor %}
+
+        <h2>Architectural Elements (HQ2)</h2>
+        <label>What are the specific architectural elements of the building? (HQ2.1)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ2_1[]"><br>
+        {% endfor %}
+
+        <label>What materials are used for the architectural elements? (HQ2.2)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ2_2[]"><br>
+        {% endfor %}
+
+        <h2>Historical Information (HQ3)</h2>
+        <label>Who is the architect of the building? (HQ3.1)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ3_1[]"><br>
+        {% endfor %}
+
+        <label>What restoration details are available for the building? (HQ3.2)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ3_2[]"><br>
+        {% endfor %}
+
+        <label>Are there any signs of deterioration in the building? (HQ3.3)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ3_3[]"><br>
+        {% endfor %}
+
+        <h2>Current and Future Use (HQ4)</h2>
+        <label>What is the current use or occupancy of the building? (HQ4.1)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ4_1[]"><br>
+        {% endfor %}
+
+        <label>What are the future plans for the building? (HQ4.2)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ4_2[]"><br>
+        {% endfor %}
+
+        <label>What historical changes in usage has the building undergone? (HQ4.3)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ4_3[]"><br>
+        {% endfor %}
+
+        <h2>Context and Environment (HQ5)</h2>
+        <label>Where is the building located? (HQ5.1)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ5_1[]"><br>
+        {% endfor %}
+
+        <label>What is the environmental context or surrounding area of the building? (HQ5.2)</label><br>
+        {% for i in range(1, 11) %}
+            <input type="text" name="CQ5_2[]"><br>
+        {% endfor %}
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
